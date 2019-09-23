@@ -1,0 +1,31 @@
+package com.company;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+          System.out.println("Введи возраст Антона");
+         Scanner a = new Scanner(System.in);
+         int an = a.nextInt();
+          System.out.println("Введи возраст Бориса");
+         Scanner b = new Scanner(System.in);
+        int bo = b.nextInt();
+          System.out.println("Введи возраст Виктора");
+         Scanner c = new Scanner(System.in);
+        int vi = c.nextInt();
+           System.out.println("Возраст Антона : " + an );
+         System.out.println("Возраст Бориса : " + bo );
+        System.out.println("Возраст Виктора : " + vi );
+             // Начинаем сравнивать
+         if (an > bo && an > vi)
+            System.out.println("Ответ : Антон старше всех");
+            if (bo > an && bo > vi)
+              System.out.println("Ответ : Борис старше всех");
+               if(vi > an && vi > bo)
+                   System.out.println("Виктор старше всех");
+                 if (an == bo && an == vi)
+                     System.out.println("Равны все");
+
+
+    }
+}
